@@ -42,7 +42,10 @@
 
 - (void)displayNextChallange
 {
-    self.currentChallange = [self.challange next];
+    NSInteger oldAnswer = self.currentChallange.answer;
+    do {
+        self.currentChallange = [self.challange next];
+    } while (self.currentChallange.answer != oldAnswer);
     
     self.challangeLabel.text = self.currentChallange.challangeText;
     self.answerTextField.text = @"";
