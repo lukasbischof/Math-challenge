@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <GameplayKit/GKRandomSource.h>
 #import "Challange.h"
 
 @protocol MathChallange <NSObject>
@@ -21,5 +22,11 @@
 #define SWF(str, ...) [NSString stringWithFormat:str, ##__VA_ARGS__]
 
 static inline const NSInteger randr(const NSInteger min, const NSInteger max) {
-    return min + arc4random_uniform((uint32_t)(max - min + 1));
+    static GKMersenneTwisterRandomSource *source;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        source = [GKMersenneTwisterRandomSource new];
+    });
+    
+    return min + [source nextIntWithUpperBound:(max - min + 1)];
 }
