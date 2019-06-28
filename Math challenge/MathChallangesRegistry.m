@@ -19,13 +19,12 @@
 
 + (NSArray<NSObject<MathChallange> *> *)registeredChallanges
 {
-    NSArray *staticArr = @[
-        [SPHAIR new],
-        [Squares new],
-        [Multiplication new],
-        [Division new]
-    ];
-    NSMutableArray<NSObject<MathChallange> *> *ret = [staticArr mutableCopy];
+    NSMutableArray *ret = [@[
+       [SPHAIR new],
+       [Squares new],
+       [Multiplication new],
+       [Division new]
+    ] mutableCopy];
     
     for (unsigned short i = 2; i < 17; i++) {
         [ret addObject:[OneNumberMultiplication newWithNumber:(NSInteger)i]];

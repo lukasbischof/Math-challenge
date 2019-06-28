@@ -10,10 +10,6 @@
 #import "DetailViewController.h"
 #import "MathChallangesRegistry.h"
 
-@interface MasterViewController ()
-
-@end
-
 @implementation MasterViewController
 
 - (void)viewDidLoad {
@@ -22,12 +18,10 @@
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
-
 - (void)viewWillAppear:(BOOL)animated {
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
     [super viewWillAppear:animated];
 }
-
 
 #pragma mark - Segues
 
@@ -36,11 +30,11 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
         controller.challange = MathChallangesRegistry.registeredChallanges[indexPath.row];
+        controller.title = controller.challange.challangeDescription;
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
 }
-
 
 #pragma mark - Table View
 
@@ -48,11 +42,9 @@
     return 1;
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [MathChallangesRegistry.registeredChallanges count];
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
@@ -63,10 +55,8 @@
     return cell;
 }
 
-
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return NO;
 }
-
 
 @end

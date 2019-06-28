@@ -18,7 +18,6 @@
 
 @end
 
-
 #define SWF(str, ...) [NSString stringWithFormat:str, ##__VA_ARGS__]
 
 static inline const NSInteger randr(const NSInteger min, const NSInteger max) {
