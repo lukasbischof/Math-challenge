@@ -9,7 +9,7 @@ class Addition: MathChallengeCategory {
   let lowerBound: Int
   let upperBound: Int
   let level: Int
-  var challengeDescription: String? {
+  var challengeDescription: String {
     get {
       return "Addition \(level + 1)-stellig"
     }
@@ -21,7 +21,7 @@ class Addition: MathChallengeCategory {
     self.upperBound = Int(powf(10.0, Float(level + 1))) - 1
   }
 
-  func next() -> Challenge? {
+  func next() -> Challenge {
     let first = randomInt(lowerBound, upperBound)
     let second = randomInt(lowerBound, upperBound)
 

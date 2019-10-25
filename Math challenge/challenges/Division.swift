@@ -6,9 +6,9 @@
 import Foundation
 
 class Division: MathChallengeCategory {
-  let challengeDescription: String? = "Division"
+  let challengeDescription: String = "Division"
 
-  func next() -> Challenge? {
+  func next() -> Challenge {
     let result = randomInt(2, 20)
     let denominator = randomInt(2, 20)
     let numerator = result * denominator

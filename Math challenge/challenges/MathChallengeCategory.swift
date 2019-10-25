@@ -10,15 +10,12 @@ import Foundation
 import GameplayKit
 
 protocol MathChallengeCategory {
-  var challengeDescription: String? { get }
-  func next() -> Challenge?
+  var challengeDescription: String { get }
+  func next() -> Challenge
 }
 
-let randrSource: GKMersenneTwisterRandomSource? = {
-  var source = GKMersenneTwisterRandomSource()
-  return source
-}()
+let randomSource = GKMersenneTwisterRandomSource()
 
 @inline(__always) func randomInt(_ min: Int, _ max: Int) -> Int {
-  return min + (randrSource?.nextInt(upperBound: max - min + 1) ?? 0)
+  return min + (randomSource.nextInt(upperBound: max - min + 1))
 }

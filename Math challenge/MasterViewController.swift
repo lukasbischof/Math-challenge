@@ -16,7 +16,9 @@ class MasterViewController: UITableViewController {
 
     if let split = splitViewController {
       let controllers = split.viewControllers
-      detailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? DetailViewController
+      let navigationController = controllers[controllers.count - 1] as! UINavigationController
+
+      detailViewController = navigationController.topViewController as? DetailViewController
     }
   }
 
@@ -24,21 +26,6 @@ class MasterViewController: UITableViewController {
     clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
 
     super.viewWillAppear(animated)
-  }
-
-  // MARK: - Segues
-
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "showDetail" {
-      if let indexPath = tableView.indexPathForSelectedRow {
-        let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-        controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-        controller.navigationItem.leftItemsSupplementBackButton = true
-        controller.challengeCategory = MathChallengesRegistry.registeredChallenges()[indexPath.row]
-        controller.title = controller.challengeCategory!.challengeDescription
-        detailViewController = controller
-      }
-    }
   }
 
   // MARK: - Table View
@@ -62,5 +49,32 @@ class MasterViewController: UITableViewController {
 
   override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
     return false
+  }
+
+  // MARK: - Segues
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "showDetail" {
+      prepareForDetailShow(segue: segue)
+    }
+  }
+
+  private func prepareForDetailShow(segue: UIStoryboardSegue) {
+    guard let indexPath = tableView.indexPathForSelectedRow else { return }
+
+    let destinationNavigationController = segue.destination as! UINavigationController
+
+    if let detailViewController = destinationNavigationController.topViewController as? DetailViewController {
+      let challengeCategory = MathChallengesRegistry.registeredChallenges()[indexPath.row]
+
+      prepareSegueDestinationViewController(detailViewController, forChallengeCategory: challengeCategory)
+    }
+  }
+
+  private func prepareSegueDestinationViewController(_ controller: DetailViewController, forChallengeCategory challengeCategory: MathChallengeCategory) {
+    controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+    controller.navigationItem.leftItemsSupplementBackButton = true
+    controller.challengeCategory = challengeCategory
+    controller.title = controller.challengeCategory!.challengeDescription
   }
 }

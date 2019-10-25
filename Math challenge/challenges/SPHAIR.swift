@@ -7,9 +7,9 @@
 //
 
 class SPHAIR: MathChallengeCategory {
-  let challengeDescription: String? = "SPHAIR"
+  let challengeDescription: String = "SPHAIR"
 
-  func next() -> Challenge? {
+  func next() -> Challenge {
     let result = randomInt(1, 100)
     let denominator = randomInt(2, 9)
 

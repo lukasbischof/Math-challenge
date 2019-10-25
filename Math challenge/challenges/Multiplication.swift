@@ -6,9 +6,9 @@
 import Foundation
 
 class Multiplication: MathChallengeCategory {
-  let challengeDescription: String? = "Multiplikation (1-10)"
+  let challengeDescription: String = "Multiplikation (1-10)"
 
-  func next() -> Challenge? {
+  func next() -> Challenge {
     let first = randomInt(2, 9)
     let second = randomInt(2, 9)
 

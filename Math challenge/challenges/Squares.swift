@@ -6,9 +6,9 @@
 import Foundation
 
 class Squares: MathChallengeCategory {
-  let challengeDescription: String? = "Quadrate"
+  let challengeDescription: String = "Quadrate"
 
-  func next() -> Challenge? {
+  func next() -> Challenge {
     let random = randomInt(3, 20)
 
     return Challenge(text: "\(random)^2", andAnswer: random * random)

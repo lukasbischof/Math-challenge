@@ -65,6 +65,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
 
   private func findNextChallenge() {
     let oldAnswer = currentChallenge?.answer ?? 0
+
     repeat {
       currentChallenge = challengeCategory!.next()
     } while currentChallenge.answer == oldAnswer
