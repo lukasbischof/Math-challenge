@@ -21,6 +21,9 @@
 		8042DE4323635163008B1893 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE4023635163008B1893 /* Addition.swift */; };
 		8042DE4423635163008B1893 /* MathChallengeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE4123635163008B1893 /* MathChallengeCategory.swift */; };
 		8042DE4523635163008B1893 /* SPHAIR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE4223635163008B1893 /* SPHAIR.swift */; };
+		8B66A7EA9D5EABC3A41772ED /* Pods_Math_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C24A697240B52CCCFFA4C1F /* Pods_Math_ChallengeTests.framework */; };
+		A93CE40CDA0D1EAFD76E5192 /* Pods_Math_Challenge_Math_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F909BD5FA872845DCD5A81FF /* Pods_Math_Challenge_Math_ChallengeUITests.framework */; };
+		C9C7E2149F3D9605423F5A76 /* Pods_Math_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E8DD3E723C6F2B894EA346 /* Pods_Math_Challenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C24A697240B52CCCFFA4C1F /* Pods_Math_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Math_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BB3F962A16257DD8828BEC /* Pods-Math Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Math Challenge/Pods-Math Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		8034B2712363520F00A282CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8042DDFD236350ED008B1893 /* Math Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8042DE09236350ED008B1893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +67,13 @@
 		8042DE4023635163008B1893 /* Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
 		8042DE4123635163008B1893 /* MathChallengeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathChallengeCategory.swift; sourceTree = "<group>"; };
 		8042DE4223635163008B1893 /* SPHAIR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHAIR.swift; sourceTree = "<group>"; };
+		A9CE19E58062841DB23EA8AD /* Pods-Math ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-Math ChallengeTests/Pods-Math ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		B005E432DA92264B3EF969A3 /* Pods-Math Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math Challenge.release.xcconfig"; path = "Target Support Files/Pods-Math Challenge/Pods-Math Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		BB34CC89C7A791281E56D17E /* Pods-Math Challenge-Math ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math Challenge-Math ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Math Challenge-Math ChallengeUITests/Pods-Math Challenge-Math ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0E8DD3E723C6F2B894EA346 /* Pods_Math_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Math_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB15FDB4FAC983F9A34AA0F5 /* Pods-Math ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-Math ChallengeTests/Pods-Math ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7867F1FB7C923AA58F600CE /* Pods-Math Challenge-Math ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math Challenge-Math ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Math Challenge-Math ChallengeUITests/Pods-Math Challenge-Math ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F909BD5FA872845DCD5A81FF /* Pods_Math_Challenge_Math_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Math_Challenge_Math_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C7E2149F3D9605423F5A76 /* Pods_Math_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B66A7EA9D5EABC3A41772ED /* Pods_Math_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,12 +97,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93CE40CDA0D1EAFD76E5192 /* Pods_Math_Challenge_Math_ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19A61AAF2E5923B2CD42FBF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62BB3F962A16257DD8828BEC /* Pods-Math Challenge.debug.xcconfig */,
+				B005E432DA92264B3EF969A3 /* Pods-Math Challenge.release.xcconfig */,
+				BB34CC89C7A791281E56D17E /* Pods-Math Challenge-Math ChallengeUITests.debug.xcconfig */,
+				E7867F1FB7C923AA58F600CE /* Pods-Math Challenge-Math ChallengeUITests.release.xcconfig */,
+				DB15FDB4FAC983F9A34AA0F5 /* Pods-Math ChallengeTests.debug.xcconfig */,
+				A9CE19E58062841DB23EA8AD /* Pods-Math ChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7BB7B16B49CC6E0AB2478C1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0E8DD3E723C6F2B894EA346 /* Pods_Math_Challenge.framework */,
+				F909BD5FA872845DCD5A81FF /* Pods_Math_Challenge_Math_ChallengeUITests.framework */,
+				1C24A697240B52CCCFFA4C1F /* Pods_Math_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8042DDF4236350ED008B1893 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +135,8 @@
 				8042DE18236350EE008B1893 /* Math ChallengeTests */,
 				8042DE23236350EE008B1893 /* Math ChallengeUITests */,
 				8042DDFE236350ED008B1893 /* Products */,
+				19A61AAF2E5923B2CD42FBF6 /* Pods */,
+				7BB7B16B49CC6E0AB2478C1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8042DE29236350EE008B1893 /* Build configuration list for PBXNativeTarget "Math Challenge" */;
 			buildPhases = (
+				71AEA325F83C7A9971EE50B5 /* [CP] Check Pods Manifest.lock */,
 				8042DDF9236350ED008B1893 /* Sources */,
 				8042DDFA236350ED008B1893 /* Frameworks */,
 				8042DDFB236350ED008B1893 /* Resources */,
+				C3663F81654DE233CBF9FC8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8042DE2C236350EE008B1893 /* Build configuration list for PBXNativeTarget "Math ChallengeTests" */;
 			buildPhases = (
+				D058C729E168555A8F3FE00E /* [CP] Check Pods Manifest.lock */,
 				8042DE11236350EE008B1893 /* Sources */,
 				8042DE12236350EE008B1893 /* Frameworks */,
 				8042DE13236350EE008B1893 /* Resources */,
@@ -198,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8042DE2F236350EE008B1893 /* Build configuration list for PBXNativeTarget "Math ChallengeUITests" */;
 			buildPhases = (
+				B4A8D25E6D831AD3EC1856BB /* [CP] Check Pods Manifest.lock */,
 				8042DE1C236350EE008B1893 /* Sources */,
 				8042DE1D236350EE008B1893 /* Frameworks */,
 				8042DE1E236350EE008B1893 /* Resources */,
+				BCF393EAD953859F6B598899 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,6 +328,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71AEA325F83C7A9971EE50B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Math Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4A8D25E6D831AD3EC1856BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Math Challenge-Math ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCF393EAD953859F6B598899 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Math Challenge-Math ChallengeUITests/Pods-Math Challenge-Math ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Math Challenge-Math ChallengeUITests/Pods-Math Challenge-Math ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Math Challenge-Math ChallengeUITests/Pods-Math Challenge-Math ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3663F81654DE233CBF9FC8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Math Challenge/Pods-Math Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Math Challenge/Pods-Math Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Math Challenge/Pods-Math Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D058C729E168555A8F3FE00E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Math ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8042DDF9236350ED008B1893 /* Sources */ = {
@@ -467,6 +616,7 @@
 		};
 		8042DE2A236350EE008B1893 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BB3F962A16257DD8828BEC /* Pods-Math Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -488,6 +638,7 @@
 		};
 		8042DE2B236350EE008B1893 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B005E432DA92264B3EF969A3 /* Pods-Math Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -508,6 +659,7 @@
 		};
 		8042DE2D236350EE008B1893 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB15FDB4FAC983F9A34AA0F5 /* Pods-Math ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +682,7 @@
 		};
 		8042DE2E236350EE008B1893 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CE19E58062841DB23EA8AD /* Pods-Math ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +705,7 @@
 		};
 		8042DE30236350EE008B1893 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB34CC89C7A791281E56D17E /* Pods-Math Challenge-Math ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -572,6 +726,7 @@
 		};
 		8042DE31236350EE008B1893 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7867F1FB7C923AA58F600CE /* Pods-Math Challenge-Math ChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

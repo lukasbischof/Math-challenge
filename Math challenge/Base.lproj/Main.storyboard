@@ -98,16 +98,21 @@
         <!--Übung-->
         <scene sceneID="7J0-Nw-3OP">
             <objects>
-                <viewController title="Übung" id="8sp-jC-T3n" customClass="DetailViewController" customModule="Math_Challange" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Übung" id="8sp-jC-T3n" customClass="DetailViewController" customModule="Math_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BRy-FG-2RN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmt-6I-xn3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MATH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmt-6I-xn3" customClass="MTMathUILabel">
                                 <rect key="frame" x="0.0" y="128" width="414" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EAt-Rx-FXS">
                                 <rect key="frame" x="8" y="199" width="398" height="50"/>
@@ -147,12 +152,12 @@
                     <connections>
                         <outlet property="answerButton" destination="N89-HA-Y9J" id="rTY-Yf-br4"/>
                         <outlet property="answerTextField" destination="EAt-Rx-FXS" id="doF-py-Rd4"/>
-                        <outlet property="challengeLabel" destination="Fmt-6I-xn3" id="pwb-DW-Klg"/>
+                        <outlet property="challengeLabel" destination="Fmt-6I-xn3" id="FS7-U4-dXr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOH-Cr-OHQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="128.18590704647679"/>
+            <point key="canvasLocation" x="707.24637681159425" y="127.90178571428571"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

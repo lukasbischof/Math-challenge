@@ -1,5 +1,5 @@
 //
-//  Chllenge.swift
+//  Challenge.swift
 //  Math Challenge
 //
 //  Created by Lukas Bischof on 24.10.19.
@@ -9,14 +9,24 @@
 import Foundation
 
 class Challenge: NSObject {
-  var challengeText: String?
+  var challengeText: String
+  var latex: String
   var answer = 0
 
-  init(text: String?, andAnswer answer: Int) {
-    super.init()
-
+  init(text: String, latex: String, andAnswer answer: Int) {
     self.challengeText = text
     self.answer = answer
+    self.latex = latex
+
+    super.init()
+  }
+
+  init(text: String, andAnswer answer: Int) {
+    self.challengeText = text
+    self.answer = answer
+    self.latex = challengeText
+
+    super.init()
   }
 
   func evaluateAnswer(_ answer: Int) -> Bool {
