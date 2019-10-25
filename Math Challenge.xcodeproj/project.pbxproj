@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		628B755953F2CFC346D132CB /* .editorconfig in Resources */ = {isa = PBXBuildFile; fileRef = 628B715EDE5998363FF59604 /* .editorconfig */; };
 		628B79D8C849585571436F8F /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B758FE04B0B237A08CE04 /* Division.swift */; };
 		8034B2722363520F00A282CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8034B2712363520F00A282CD /* Assets.xcassets */; };
 		8042DE0A236350ED008B1893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8042DE08236350ED008B1893 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		1C24A697240B52CCCFFA4C1F /* Pods_Math_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Math_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		628B715EDE5998363FF59604 /* .editorconfig */ = {isa = PBXFileReference; lastKnownFileType = file.editorrc; path = .editorconfig; sourceTree = "<group>"; };
 		628B758FE04B0B237A08CE04 /* Division.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
 		62BB3F962A16257DD8828BEC /* Pods-Math Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Math Challenge/Pods-Math Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		8034B2712363520F00A282CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				8042DDFE236350ED008B1893 /* Products */,
 				19A61AAF2E5923B2CD42FBF6 /* Pods */,
 				7BB7B16B49CC6E0AB2478C1A /* Frameworks */,
+				628B715EDE5998363FF59604 /* .editorconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -313,6 +316,7 @@
 				8042DE0F236350EE008B1893 /* LaunchScreen.storyboard in Resources */,
 				8034B2722363520F00A282CD /* Assets.xcassets in Resources */,
 				8042DE0A236350ED008B1893 /* Main.storyboard in Resources */,
+				628B755953F2CFC346D132CB /* .editorconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
