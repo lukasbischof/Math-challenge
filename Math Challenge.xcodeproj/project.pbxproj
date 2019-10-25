@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8034B2722363520F00A282CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8034B2712363520F00A282CD /* Assets.xcassets */; };
+		8042DE0A236350ED008B1893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8042DE08236350ED008B1893 /* Main.storyboard */; };
+		8042DE0F236350EE008B1893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8042DE0D236350EE008B1893 /* LaunchScreen.storyboard */; };
+		8042DE1A236350EE008B1893 /* Math_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE19236350EE008B1893 /* Math_ChallengeTests.swift */; };
+		8042DE25236350EE008B1893 /* Math_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE24236350EE008B1893 /* Math_ChallengeUITests.swift */; };
+		8042DE3923635151008B1893 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3323635151008B1893 /* MasterViewController.swift */; };
+		8042DE3A23635151008B1893 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3423635151008B1893 /* DetailViewController.swift */; };
+		8042DE3B23635151008B1893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3523635151008B1893 /* AppDelegate.swift */; };
+		8042DE3C23635151008B1893 /* MathChallengesRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3623635151008B1893 /* MathChallengesRegistry.swift */; };
+		8042DE3D23635151008B1893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3723635151008B1893 /* SceneDelegate.swift */; };
+		8042DE3E23635151008B1893 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3823635151008B1893 /* Challenge.swift */; };
+		8042DE4323635163008B1893 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE4023635163008B1893 /* Addition.swift */; };
+		8042DE4423635163008B1893 /* MathChallengeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE4123635163008B1893 /* MathChallengeCategory.swift */; };
+		8042DE4523635163008B1893 /* SPHAIR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE4223635163008B1893 /* SPHAIR.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8042DE16236350EE008B1893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8042DDF5236350ED008B1893 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8042DDFC236350ED008B1893;
+			remoteInfo = "Math Challenge";
+		};
+		8042DE21236350EE008B1893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8042DDF5236350ED008B1893 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8042DDFC236350ED008B1893;
+			remoteInfo = "Math Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8034B2712363520F00A282CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8042DDFD236350ED008B1893 /* Math Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8042DE09236350ED008B1893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8042DE0E236350EE008B1893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8042DE10236350EE008B1893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8042DE15236350EE008B1893 /* Math ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Math ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8042DE19236350EE008B1893 /* Math_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math_ChallengeTests.swift; sourceTree = "<group>"; };
+		8042DE1B236350EE008B1893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8042DE20236350EE008B1893 /* Math ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Math ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8042DE24236350EE008B1893 /* Math_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math_ChallengeUITests.swift; sourceTree = "<group>"; };
+		8042DE26236350EE008B1893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8042DE3223635150008B1893 /* Math Challenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Math Challenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		8042DE3323635151008B1893 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		8042DE3423635151008B1893 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8042DE3523635151008B1893 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8042DE3623635151008B1893 /* MathChallengesRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathChallengesRegistry.swift; sourceTree = "<group>"; };
+		8042DE3723635151008B1893 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8042DE3823635151008B1893 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		8042DE4023635163008B1893 /* Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
+		8042DE4123635163008B1893 /* MathChallengeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathChallengeCategory.swift; sourceTree = "<group>"; };
+		8042DE4223635163008B1893 /* SPHAIR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHAIR.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8042DDFA236350ED008B1893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8042DE12236350EE008B1893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8042DE1D236350EE008B1893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8042DDF4236350ED008B1893 = {
+			isa = PBXGroup;
+			children = (
+				8042DDFF236350ED008B1893 /* Math Challenge */,
+				8042DE18236350EE008B1893 /* Math ChallengeTests */,
+				8042DE23236350EE008B1893 /* Math ChallengeUITests */,
+				8042DDFE236350ED008B1893 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8042DDFE236350ED008B1893 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8042DDFD236350ED008B1893 /* Math Challenge.app */,
+				8042DE15236350EE008B1893 /* Math ChallengeTests.xctest */,
+				8042DE20236350EE008B1893 /* Math ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8042DDFF236350ED008B1893 /* Math Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				8042DE3F23635157008B1893 /* challenges */,
+				8042DE3523635151008B1893 /* AppDelegate.swift */,
+				8042DE3823635151008B1893 /* Challenge.swift */,
+				8042DE3423635151008B1893 /* DetailViewController.swift */,
+				8042DE3323635151008B1893 /* MasterViewController.swift */,
+				8042DE3623635151008B1893 /* MathChallengesRegistry.swift */,
+				8034B2712363520F00A282CD /* Assets.xcassets */,
+				8042DE3723635151008B1893 /* SceneDelegate.swift */,
+				8042DE08236350ED008B1893 /* Main.storyboard */,
+				8042DE0D236350EE008B1893 /* LaunchScreen.storyboard */,
+				8042DE10236350EE008B1893 /* Info.plist */,
+				8042DE3223635150008B1893 /* Math Challenge-Bridging-Header.h */,
+			);
+			path = "Math Challenge";
+			sourceTree = "<group>";
+		};
+		8042DE18236350EE008B1893 /* Math ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8042DE19236350EE008B1893 /* Math_ChallengeTests.swift */,
+				8042DE1B236350EE008B1893 /* Info.plist */,
+			);
+			path = "Math ChallengeTests";
+			sourceTree = "<group>";
+		};
+		8042DE23236350EE008B1893 /* Math ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8042DE24236350EE008B1893 /* Math_ChallengeUITests.swift */,
+				8042DE26236350EE008B1893 /* Info.plist */,
+			);
+			path = "Math ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		8042DE3F23635157008B1893 /* challenges */ = {
+			isa = PBXGroup;
+			children = (
+				8042DE4023635163008B1893 /* Addition.swift */,
+				8042DE4123635163008B1893 /* MathChallengeCategory.swift */,
+				8042DE4223635163008B1893 /* SPHAIR.swift */,
+			);
+			path = challenges;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8042DDFC236350ED008B1893 /* Math Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8042DE29236350EE008B1893 /* Build configuration list for PBXNativeTarget "Math Challenge" */;
+			buildPhases = (
+				8042DDF9236350ED008B1893 /* Sources */,
+				8042DDFA236350ED008B1893 /* Frameworks */,
+				8042DDFB236350ED008B1893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Math Challenge";
+			productName = "Math Challenge";
+			productReference = 8042DDFD236350ED008B1893 /* Math Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8042DE14236350EE008B1893 /* Math ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8042DE2C236350EE008B1893 /* Build configuration list for PBXNativeTarget "Math ChallengeTests" */;
+			buildPhases = (
+				8042DE11236350EE008B1893 /* Sources */,
+				8042DE12236350EE008B1893 /* Frameworks */,
+				8042DE13236350EE008B1893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8042DE17236350EE008B1893 /* PBXTargetDependency */,
+			);
+			name = "Math ChallengeTests";
+			productName = "Math ChallengeTests";
+			productReference = 8042DE15236350EE008B1893 /* Math ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8042DE1F236350EE008B1893 /* Math ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8042DE2F236350EE008B1893 /* Build configuration list for PBXNativeTarget "Math ChallengeUITests" */;
+			buildPhases = (
+				8042DE1C236350EE008B1893 /* Sources */,
+				8042DE1D236350EE008B1893 /* Frameworks */,
+				8042DE1E236350EE008B1893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8042DE22236350EE008B1893 /* PBXTargetDependency */,
+			);
+			name = "Math ChallengeUITests";
+			productName = "Math ChallengeUITests";
+			productReference = 8042DE20236350EE008B1893 /* Math ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8042DDF5236350ED008B1893 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Lukas Bischof";
+				TargetAttributes = {
+					8042DDFC236350ED008B1893 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					8042DE14236350EE008B1893 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 8042DDFC236350ED008B1893;
+					};
+					8042DE1F236350EE008B1893 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 8042DDFC236350ED008B1893;
+					};
+				};
+			};
+			buildConfigurationList = 8042DDF8236350ED008B1893 /* Build configuration list for PBXProject "Math Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8042DDF4236350ED008B1893;
+			productRefGroup = 8042DDFE236350ED008B1893 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8042DDFC236350ED008B1893 /* Math Challenge */,
+				8042DE14236350EE008B1893 /* Math ChallengeTests */,
+				8042DE1F236350EE008B1893 /* Math ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8042DDFB236350ED008B1893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8042DE0F236350EE008B1893 /* LaunchScreen.storyboard in Resources */,
+				8034B2722363520F00A282CD /* Assets.xcassets in Resources */,
+				8042DE0A236350ED008B1893 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8042DE13236350EE008B1893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8042DE1E236350EE008B1893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8042DDF9236350ED008B1893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8042DE3D23635151008B1893 /* SceneDelegate.swift in Sources */,
+				8042DE4423635163008B1893 /* MathChallengeCategory.swift in Sources */,
+				8042DE3E23635151008B1893 /* Challenge.swift in Sources */,
+				8042DE3C23635151008B1893 /* MathChallengesRegistry.swift in Sources */,
+				8042DE4323635163008B1893 /* Addition.swift in Sources */,
+				8042DE3B23635151008B1893 /* AppDelegate.swift in Sources */,
+				8042DE3923635151008B1893 /* MasterViewController.swift in Sources */,
+				8042DE4523635163008B1893 /* SPHAIR.swift in Sources */,
+				8042DE3A23635151008B1893 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8042DE11236350EE008B1893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8042DE1A236350EE008B1893 /* Math_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8042DE1C236350EE008B1893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8042DE25236350EE008B1893 /* Math_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8042DE17236350EE008B1893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8042DDFC236350ED008B1893 /* Math Challenge */;
+			targetProxy = 8042DE16236350EE008B1893 /* PBXContainerItemProxy */;
+		};
+		8042DE22236350EE008B1893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8042DDFC236350ED008B1893 /* Math Challenge */;
+			targetProxy = 8042DE21236350EE008B1893 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8042DE08236350ED008B1893 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8042DE09236350ED008B1893 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8042DE0D236350EE008B1893 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8042DE0E236350EE008B1893 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8042DE27236350EE008B1893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8042DE28236350EE008B1893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8042DE2A236350EE008B1893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3ZHN63G47;
+				INFOPLIST_FILE = "Math Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.luk4s.Math-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Math Challenge/Math Challenge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8042DE2B236350EE008B1893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3ZHN63G47;
+				INFOPLIST_FILE = "Math Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.luk4s.Math-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Math Challenge/Math Challenge-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8042DE2D236350EE008B1893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3ZHN63G47;
+				INFOPLIST_FILE = "Math ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.luk4s.Math-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Math Challenge.app/Math Challenge";
+			};
+			name = Debug;
+		};
+		8042DE2E236350EE008B1893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3ZHN63G47;
+				INFOPLIST_FILE = "Math ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.luk4s.Math-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Math Challenge.app/Math Challenge";
+			};
+			name = Release;
+		};
+		8042DE30236350EE008B1893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3ZHN63G47;
+				INFOPLIST_FILE = "Math ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.luk4s.Math-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Math Challenge";
+			};
+			name = Debug;
+		};
+		8042DE31236350EE008B1893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3ZHN63G47;
+				INFOPLIST_FILE = "Math ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.luk4s.Math-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Math Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8042DDF8236350ED008B1893 /* Build configuration list for PBXProject "Math Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8042DE27236350EE008B1893 /* Debug */,
+				8042DE28236350EE008B1893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8042DE29236350EE008B1893 /* Build configuration list for PBXNativeTarget "Math Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8042DE2A236350EE008B1893 /* Debug */,
+				8042DE2B236350EE008B1893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8042DE2C236350EE008B1893 /* Build configuration list for PBXNativeTarget "Math ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8042DE2D236350EE008B1893 /* Debug */,
+				8042DE2E236350EE008B1893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8042DE2F236350EE008B1893 /* Build configuration list for PBXNativeTarget "Math ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8042DE30236350EE008B1893 /* Debug */,
+				8042DE31236350EE008B1893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8042DDF5236350ED008B1893 /* Project object */;
+}
