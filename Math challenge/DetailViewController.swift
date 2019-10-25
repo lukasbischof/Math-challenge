@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import iosMath
 
 class DetailViewController: UIViewController, UITextFieldDelegate {
   private var currentChallenge: Challenge!
-  @IBOutlet weak var challengeLabel: UILabel!
+  @IBOutlet weak var challengeLabel: MTMathUILabel!
   @IBOutlet weak var answerTextField: UITextField!
   @IBOutlet weak var answerButton: UIButton!
-
+  
   var challengeCategory: MathChallengeCategory? {
     didSet {
       findNextChallenge()
@@ -39,12 +40,14 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
 
   private func configureView() {
     answerTextField.delegate = self
+    
+    challengeLabel.textAlignment = .center
 
     displayChallenge()
   }
 
   private func displayChallenge() {
-    challengeLabel.text = currentChallenge.challengeText
+    challengeLabel.latex = currentChallenge.latex
     answerTextField.text = ""
     answerButton.setTitle("Antwort", for: .normal)
   }

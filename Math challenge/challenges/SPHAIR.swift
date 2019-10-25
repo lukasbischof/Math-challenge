@@ -40,9 +40,14 @@ class SPHAIR: MathChallengeCategory {
 
     if hasChallenge {
       let multiplication = x / numerator
-      return Challenge(text: "\(numerator)/\(denominator) * \(multiplication)", andAnswer: result)
+      return generateChallenge(numerator, denominator, multiplication, result)
     } else {
       return next()
     }
+  }
+
+  private func generateChallenge(_ numerator: Int, _ denominator: Int, _ multiplication: Int, _ result: Int) -> Challenge {
+    let latex = "\\frac{\(numerator)}{\(denominator)} * \(multiplication)"
+    return Challenge(text: "\(numerator)/\(denominator) * \(multiplication)", latex: latex, andAnswer: result)
   }
 }
