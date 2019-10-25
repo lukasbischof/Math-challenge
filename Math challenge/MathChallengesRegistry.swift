@@ -10,7 +10,7 @@ import Foundation
 
 class MathChallengesRegistry: NSObject {
   class func registeredChallenges() -> Array<MathChallengeCategory> {
-    var ret: Array<MathChallengeCategory> = [SPHAIR(), Division(), Multiplication()]
+    var ret: Array<MathChallengeCategory> = [SPHAIR(), Division(), Multiplication(), Squares()]
 
 //        var ret = [SPHAIR.init(), Squares(), Multiplication(), Division()]
 //
