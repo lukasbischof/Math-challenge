@@ -6,11 +6,7 @@
 import Foundation
 
 class Division: MathChallengeCategory {
-  var challengeDescription: String? {
-    get {
-      return "Division"
-    }
-  }
+  let challengeDescription: String? = "Division"
 
   func next() -> Challenge? {
     let result = randomInt(2, 20)

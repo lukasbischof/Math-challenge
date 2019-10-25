@@ -7,11 +7,7 @@
 //
 
 class SPHAIR: MathChallengeCategory {
-  var challengeDescription: String? {
-    get {
-      return "SPHAIR"
-    }
-  }
+  let challengeDescription: String? = "SPHAIR"
 
   func next() -> Challenge? {
     let result = randomInt(1, 100)
