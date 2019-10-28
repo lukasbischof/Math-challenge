@@ -9,7 +9,7 @@
 import Foundation
 import GameplayKit
 
-protocol MathChallengeCategory {
+protocol MathChallengeGenerator {
   var challengeDescription: String { get }
   func next() -> Challenge
 }

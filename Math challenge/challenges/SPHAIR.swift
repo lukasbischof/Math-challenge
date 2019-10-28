@@ -6,7 +6,7 @@
 //  Copyright © 2019 Lukas Bischof. All rights reserved.
 //
 
-class SPHAIR: MathChallengeCategory {
+class SPHAIR: MathChallengeGenerator {
   let challengeDescription: String = "SPHAIR"
 
   func next() -> Challenge {

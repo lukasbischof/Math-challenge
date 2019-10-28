@@ -9,8 +9,8 @@
 import Foundation
 
 class MathChallengesRegistry: NSObject {
-  class func registeredChallenges() -> Array<MathChallengeCategory> {
-    var ret: Array<MathChallengeCategory> = [SPHAIR(), Division(), Multiplication(), Squares()]
+  class func registeredChallenges() -> Array<MathChallengeGenerator> {
+    var ret: Array<MathChallengeGenerator> = [SPHAIR(), Division(), Multiplication(), Squares()]
 
 //        for i in 2..<17 {
 //            ret.append(OneNumberMultiplication.new(withNumber: i))

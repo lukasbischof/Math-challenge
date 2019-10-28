@@ -5,7 +5,7 @@
 
 import Foundation
 
-class Squares: MathChallengeCategory {
+class Squares: MathChallengeGenerator {
   let challengeDescription: String = "Quadrate"
 
   func next() -> Challenge {

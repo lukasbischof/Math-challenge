@@ -71,7 +71,7 @@ class MasterViewController: UITableViewController {
     }
   }
 
-  private func prepareSegueDestinationViewController(_ controller: DetailViewController, forChallengeCategory challengeCategory: MathChallengeCategory) {
+  private func prepareSegueDestinationViewController(_ controller: DetailViewController, forChallengeCategory challengeCategory: MathChallengeGenerator) {
     controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
     controller.navigationItem.leftItemsSupplementBackButton = true
     controller.challengeCategory = challengeCategory

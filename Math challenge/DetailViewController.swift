@@ -15,7 +15,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var answerTextField: UITextField!
   @IBOutlet weak var answerButton: UIButton!
   
-  var challengeCategory: MathChallengeCategory? {
+  var challengeCategory: MathChallengeGenerator? {
     didSet {
       findNextChallenge()
     }

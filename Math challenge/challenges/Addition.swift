@@ -5,7 +5,7 @@
 
 import Foundation
 
-class Addition: MathChallengeCategory {
+class Addition: MathChallengeGenerator {
   let lowerBound: Int
   let upperBound: Int
   let level: Int

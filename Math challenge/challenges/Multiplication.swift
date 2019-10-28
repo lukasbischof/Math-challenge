@@ -5,7 +5,7 @@
 
 import Foundation
 
-class Multiplication: MathChallengeCategory {
+class Multiplication: MathChallengeGenerator {
   let challengeDescription: String = "Multiplikation (1-10)"
 
   func next() -> Challenge {

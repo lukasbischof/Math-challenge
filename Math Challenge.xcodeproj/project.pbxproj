@@ -24,7 +24,7 @@
 		8042DE3D23635151008B1893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3723635151008B1893 /* SceneDelegate.swift */; };
 		8042DE3E23635151008B1893 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3823635151008B1893 /* Challenge.swift */; };
 		8042DE4323635163008B1893 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE4023635163008B1893 /* Addition.swift */; };
-		8042DE4423635163008B1893 /* MathChallengeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE4123635163008B1893 /* MathChallengeCategory.swift */; };
+		8042DE4423635163008B1893 /* MathChallengeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE4123635163008B1893 /* MathChallengeGenerator.swift */; };
 		8042DE4523635163008B1893 /* SPHAIR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE4223635163008B1893 /* SPHAIR.swift */; };
 		8B66A7EA9D5EABC3A41772ED /* Pods_Math_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C24A697240B52CCCFFA4C1F /* Pods_Math_ChallengeTests.framework */; };
 		A93CE40CDA0D1EAFD76E5192 /* Pods_Math_Challenge_Math_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F909BD5FA872845DCD5A81FF /* Pods_Math_Challenge_Math_ChallengeUITests.framework */; };
@@ -75,7 +75,7 @@
 		8042DE3723635151008B1893 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8042DE3823635151008B1893 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		8042DE4023635163008B1893 /* Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
-		8042DE4123635163008B1893 /* MathChallengeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathChallengeCategory.swift; sourceTree = "<group>"; };
+		8042DE4123635163008B1893 /* MathChallengeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathChallengeGenerator.swift; sourceTree = "<group>"; };
 		8042DE4223635163008B1893 /* SPHAIR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHAIR.swift; sourceTree = "<group>"; };
 		A9CE19E58062841DB23EA8AD /* Pods-Math ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-Math ChallengeTests/Pods-Math ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		B005E432DA92264B3EF969A3 /* Pods-Math Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math Challenge.release.xcconfig"; path = "Target Support Files/Pods-Math Challenge/Pods-Math Challenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				8042DE4023635163008B1893 /* Addition.swift */,
-				8042DE4123635163008B1893 /* MathChallengeCategory.swift */,
+				8042DE4123635163008B1893 /* MathChallengeGenerator.swift */,
 				8042DE4223635163008B1893 /* SPHAIR.swift */,
 				628B758FE04B0B237A08CE04 /* Division.swift */,
 				628B78A2DAF6AA863A31D36F /* Multiplication.swift */,
@@ -454,7 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8042DE3D23635151008B1893 /* SceneDelegate.swift in Sources */,
-				8042DE4423635163008B1893 /* MathChallengeCategory.swift in Sources */,
+				8042DE4423635163008B1893 /* MathChallengeGenerator.swift in Sources */,
 				8042DE3E23635151008B1893 /* Challenge.swift in Sources */,
 				8042DE3C23635151008B1893 /* MathChallengesRegistry.swift in Sources */,
 				8042DE4323635163008B1893 /* Addition.swift in Sources */,

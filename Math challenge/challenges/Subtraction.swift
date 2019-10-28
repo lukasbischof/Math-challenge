@@ -5,7 +5,7 @@
 
 import Foundation
 
-class Subtraction: MathChallengeCategory {
+class Subtraction: MathChallengeGenerator {
   var challengeDescription: String {
     get { "Subtraktion von \(lowerBound!) bis \(upperBound!)" }
   }

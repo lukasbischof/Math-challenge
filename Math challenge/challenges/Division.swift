@@ -5,7 +5,7 @@
 
 import Foundation
 
-class Division: MathChallengeCategory {
+class Division: MathChallengeGenerator {
   let challengeDescription: String = "Division"
 
   func next() -> Challenge {
