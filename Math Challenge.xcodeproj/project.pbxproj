@@ -16,6 +16,7 @@
 		628B79D8C849585571436F8F /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B758FE04B0B237A08CE04 /* Division.swift */; };
 		628B7A432596C16056983967 /* Squares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B7B27887CE8E0E7697315 /* Squares.swift */; };
 		628B7BA76CB2D73326B7BEE9 /* AdditionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B718372861E8829E97CC7 /* AdditionCategory.swift */; };
+		628B7E656064AAA81A881837 /* IndexPath+section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B74406100822ED5432C8F /* IndexPath+section.swift */; };
 		628B7E7542A04DC2A97F34E7 /* SPHAIRCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B7A34EA707AE08B11051E /* SPHAIRCategory.swift */; };
 		628B7E999EBF436CF7E14D83 /* Subtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B75B720296FD733E2D574 /* Subtraction.swift */; };
 		628B7EF2B7D168A80D672A54 /* SubtractionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B7E699E3A4E0044CA7594 /* SubtractionCategory.swift */; };
@@ -59,6 +60,7 @@
 		1C24A697240B52CCCFFA4C1F /* Pods_Math_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Math_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		628B715EDE5998363FF59604 /* .editorconfig */ = {isa = PBXFileReference; lastKnownFileType = file.editorrc; path = .editorconfig; sourceTree = "<group>"; };
 		628B718372861E8829E97CC7 /* AdditionCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionCategory.swift; sourceTree = "<group>"; };
+		628B74406100822ED5432C8F /* IndexPath+section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexPath+section.swift"; sourceTree = "<group>"; };
 		628B746C5EBC06577C28BD09 /* MathChallengeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathChallengeCategory.swift; sourceTree = "<group>"; };
 		628B758FE04B0B237A08CE04 /* Division.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
 		628B75B720296FD733E2D574 /* Subtraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subtraction.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				8042DE0D236350EE008B1893 /* LaunchScreen.storyboard */,
 				8042DE10236350EE008B1893 /* Info.plist */,
 				8042DE3223635150008B1893 /* Math Challenge-Bridging-Header.h */,
+				628B74406100822ED5432C8F /* IndexPath+section.swift */,
 			);
 			path = "Math Challenge";
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				628B787DFCB381A2E641297E /* SquaresCategory.swift in Sources */,
 				628B7BA76CB2D73326B7BEE9 /* AdditionCategory.swift in Sources */,
 				628B7EF2B7D168A80D672A54 /* SubtractionCategory.swift in Sources */,
+				628B7E656064AAA81A881837 /* IndexPath+section.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

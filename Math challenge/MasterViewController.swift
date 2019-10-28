@@ -35,7 +35,7 @@ class MasterViewController: UITableViewController {
   }
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    challengeCategory(forIndexPath: IndexPath(row: 0, section: section)).generators().count
+    challengeCategory(forIndexPath: IndexPath(section: section)).generators().count
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,7 +52,7 @@ class MasterViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    challengeCategory(forIndexPath: IndexPath(row: -1, section: section)).categoryName
+    challengeCategory(forIndexPath: IndexPath(section: section)).categoryName
   }
 
   // MARK: - Segues
