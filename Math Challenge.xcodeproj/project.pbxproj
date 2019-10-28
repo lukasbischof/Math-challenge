@@ -3,15 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		628B722EC73EFE1A29D44EA9 /* MultiplicationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B791B2F97A6543B65BEB5 /* MultiplicationCategory.swift */; };
+		628B7289D71985BE08E584F8 /* DivisionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B7DAA309D48831C25427C /* DivisionCategory.swift */; };
+		628B74310B57EDB57F1BEA5C /* MathChallengeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B746C5EBC06577C28BD09 /* MathChallengeCategory.swift */; };
 		628B755953F2CFC346D132CB /* .editorconfig in Resources */ = {isa = PBXBuildFile; fileRef = 628B715EDE5998363FF59604 /* .editorconfig */; };
 		628B7684D275C526D7EC3E3D /* Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B78A2DAF6AA863A31D36F /* Multiplication.swift */; };
+		628B787DFCB381A2E641297E /* SquaresCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B7E0386EC2C614E0135CB /* SquaresCategory.swift */; };
 		628B79D8C849585571436F8F /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B758FE04B0B237A08CE04 /* Division.swift */; };
 		628B7A432596C16056983967 /* Squares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B7B27887CE8E0E7697315 /* Squares.swift */; };
+		628B7BA76CB2D73326B7BEE9 /* AdditionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B718372861E8829E97CC7 /* AdditionCategory.swift */; };
+		628B7E656064AAA81A881837 /* IndexPath+section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B74406100822ED5432C8F /* IndexPath+section.swift */; };
+		628B7E7542A04DC2A97F34E7 /* SPHAIRCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B7A34EA707AE08B11051E /* SPHAIRCategory.swift */; };
 		628B7E999EBF436CF7E14D83 /* Subtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B75B720296FD733E2D574 /* Subtraction.swift */; };
+		628B7EF2B7D168A80D672A54 /* SubtractionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B7E699E3A4E0044CA7594 /* SubtractionCategory.swift */; };
 		8034B2722363520F00A282CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8034B2712363520F00A282CD /* Assets.xcassets */; };
 		8042DE0A236350ED008B1893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8042DE08236350ED008B1893 /* Main.storyboard */; };
 		8042DE0F236350EE008B1893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8042DE0D236350EE008B1893 /* LaunchScreen.storyboard */; };
@@ -20,7 +28,7 @@
 		8042DE3923635151008B1893 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3323635151008B1893 /* MasterViewController.swift */; };
 		8042DE3A23635151008B1893 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3423635151008B1893 /* DetailViewController.swift */; };
 		8042DE3B23635151008B1893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3523635151008B1893 /* AppDelegate.swift */; };
-		8042DE3C23635151008B1893 /* MathChallengesRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3623635151008B1893 /* MathChallengesRegistry.swift */; };
+		8042DE3C23635151008B1893 /* MathChallengeCategoriesRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3623635151008B1893 /* MathChallengeCategoriesRegistry.swift */; };
 		8042DE3D23635151008B1893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3723635151008B1893 /* SceneDelegate.swift */; };
 		8042DE3E23635151008B1893 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3823635151008B1893 /* Challenge.swift */; };
 		8042DE4323635163008B1893 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE4023635163008B1893 /* Addition.swift */; };
@@ -51,10 +59,18 @@
 /* Begin PBXFileReference section */
 		1C24A697240B52CCCFFA4C1F /* Pods_Math_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Math_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		628B715EDE5998363FF59604 /* .editorconfig */ = {isa = PBXFileReference; lastKnownFileType = file.editorrc; path = .editorconfig; sourceTree = "<group>"; };
+		628B718372861E8829E97CC7 /* AdditionCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionCategory.swift; sourceTree = "<group>"; };
+		628B74406100822ED5432C8F /* IndexPath+section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexPath+section.swift"; sourceTree = "<group>"; };
+		628B746C5EBC06577C28BD09 /* MathChallengeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathChallengeCategory.swift; sourceTree = "<group>"; };
 		628B758FE04B0B237A08CE04 /* Division.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
 		628B75B720296FD733E2D574 /* Subtraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subtraction.swift; sourceTree = "<group>"; };
 		628B78A2DAF6AA863A31D36F /* Multiplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
+		628B791B2F97A6543B65BEB5 /* MultiplicationCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplicationCategory.swift; sourceTree = "<group>"; };
+		628B7A34EA707AE08B11051E /* SPHAIRCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHAIRCategory.swift; sourceTree = "<group>"; };
 		628B7B27887CE8E0E7697315 /* Squares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squares.swift; sourceTree = "<group>"; };
+		628B7DAA309D48831C25427C /* DivisionCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionCategory.swift; sourceTree = "<group>"; };
+		628B7E0386EC2C614E0135CB /* SquaresCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquaresCategory.swift; sourceTree = "<group>"; };
+		628B7E699E3A4E0044CA7594 /* SubtractionCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtractionCategory.swift; sourceTree = "<group>"; };
 		62BB3F962A16257DD8828BEC /* Pods-Math Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Math Challenge/Pods-Math Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		8034B2712363520F00A282CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8042DDFD236350ED008B1893 /* Math Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +87,7 @@
 		8042DE3323635151008B1893 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		8042DE3423635151008B1893 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8042DE3523635151008B1893 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8042DE3623635151008B1893 /* MathChallengesRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathChallengesRegistry.swift; sourceTree = "<group>"; };
+		8042DE3623635151008B1893 /* MathChallengeCategoriesRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathChallengeCategoriesRegistry.swift; sourceTree = "<group>"; };
 		8042DE3723635151008B1893 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8042DE3823635151008B1893 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		8042DE4023635163008B1893 /* Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
@@ -124,7 +140,6 @@
 				DB15FDB4FAC983F9A34AA0F5 /* Pods-Math ChallengeTests.debug.xcconfig */,
 				A9CE19E58062841DB23EA8AD /* Pods-Math ChallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -164,18 +179,20 @@
 		8042DDFF236350ED008B1893 /* Math Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				80D98A5C23678B9200C04C49 /* categories */,
 				8042DE3F23635157008B1893 /* challenges */,
 				8042DE3523635151008B1893 /* AppDelegate.swift */,
 				8042DE3823635151008B1893 /* Challenge.swift */,
 				8042DE3423635151008B1893 /* DetailViewController.swift */,
 				8042DE3323635151008B1893 /* MasterViewController.swift */,
-				8042DE3623635151008B1893 /* MathChallengesRegistry.swift */,
+				8042DE3623635151008B1893 /* MathChallengeCategoriesRegistry.swift */,
 				8034B2712363520F00A282CD /* Assets.xcassets */,
 				8042DE3723635151008B1893 /* SceneDelegate.swift */,
 				8042DE08236350ED008B1893 /* Main.storyboard */,
 				8042DE0D236350EE008B1893 /* LaunchScreen.storyboard */,
 				8042DE10236350EE008B1893 /* Info.plist */,
 				8042DE3223635150008B1893 /* Math Challenge-Bridging-Header.h */,
+				628B74406100822ED5432C8F /* IndexPath+section.swift */,
 			);
 			path = "Math Challenge";
 			sourceTree = "<group>";
@@ -210,6 +227,20 @@
 				628B75B720296FD733E2D574 /* Subtraction.swift */,
 			);
 			path = challenges;
+			sourceTree = "<group>";
+		};
+		80D98A5C23678B9200C04C49 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				628B746C5EBC06577C28BD09 /* MathChallengeCategory.swift */,
+				628B7A34EA707AE08B11051E /* SPHAIRCategory.swift */,
+				628B7DAA309D48831C25427C /* DivisionCategory.swift */,
+				628B791B2F97A6543B65BEB5 /* MultiplicationCategory.swift */,
+				628B7E0386EC2C614E0135CB /* SquaresCategory.swift */,
+				628B718372861E8829E97CC7 /* AdditionCategory.swift */,
+				628B7E699E3A4E0044CA7594 /* SubtractionCategory.swift */,
+			);
+			path = categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,7 +487,7 @@
 				8042DE3D23635151008B1893 /* SceneDelegate.swift in Sources */,
 				8042DE4423635163008B1893 /* MathChallengeGenerator.swift in Sources */,
 				8042DE3E23635151008B1893 /* Challenge.swift in Sources */,
-				8042DE3C23635151008B1893 /* MathChallengesRegistry.swift in Sources */,
+				8042DE3C23635151008B1893 /* MathChallengeCategoriesRegistry.swift in Sources */,
 				8042DE4323635163008B1893 /* Addition.swift in Sources */,
 				8042DE3B23635151008B1893 /* AppDelegate.swift in Sources */,
 				8042DE3923635151008B1893 /* MasterViewController.swift in Sources */,
@@ -466,6 +497,14 @@
 				628B7684D275C526D7EC3E3D /* Multiplication.swift in Sources */,
 				628B7A432596C16056983967 /* Squares.swift in Sources */,
 				628B7E999EBF436CF7E14D83 /* Subtraction.swift in Sources */,
+				628B74310B57EDB57F1BEA5C /* MathChallengeCategory.swift in Sources */,
+				628B7E7542A04DC2A97F34E7 /* SPHAIRCategory.swift in Sources */,
+				628B7289D71985BE08E584F8 /* DivisionCategory.swift in Sources */,
+				628B722EC73EFE1A29D44EA9 /* MultiplicationCategory.swift in Sources */,
+				628B787DFCB381A2E641297E /* SquaresCategory.swift in Sources */,
+				628B7BA76CB2D73326B7BEE9 /* AdditionCategory.swift in Sources */,
+				628B7EF2B7D168A80D672A54 /* SubtractionCategory.swift in Sources */,
+				628B7E656064AAA81A881837 /* IndexPath+section.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

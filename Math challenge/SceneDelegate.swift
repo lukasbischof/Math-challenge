@@ -37,6 +37,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
       return false
     }
 
-    return topAsDetailController.challengeCategory == nil
+    return topAsDetailController.challengeGenerator == nil
   }
 }
