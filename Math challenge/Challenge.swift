@@ -8,28 +8,30 @@
 
 import Foundation
 
-class Challenge: NSObject {
-  var challengeText: String
-  var latex: String
-  var answer = 0
+struct Challenge {
+  let challengeText: String
+  let answer: Int
+
+  fileprivate var _latex: String?
+  var latex: String {
+    get {
+      _latex ?? challengeText
+    }
+  }
 
   init(text: String, latex: String, andAnswer answer: Int) {
     self.challengeText = text
     self.answer = answer
-    self.latex = latex
-
-    super.init()
+    self._latex = latex
   }
 
   init(text: String, andAnswer answer: Int) {
     self.challengeText = text
     self.answer = answer
-    self.latex = challengeText
-
-    super.init()
+    self._latex = challengeText
   }
 
   func evaluateAnswer(_ answer: Int) -> Bool {
-    return answer == self.answer
+    answer == self.answer
   }
 }
