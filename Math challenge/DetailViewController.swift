@@ -15,7 +15,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var answerTextField: UITextField!
   @IBOutlet weak var answerButton: UIButton!
   
-  var challengeCategory: MathChallengeGenerator? {
+  var challengeGenerator: MathChallengeGenerator? {
     didSet {
       findNextChallenge()
     }
@@ -67,7 +67,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     let oldAnswer = currentChallenge?.answer ?? 0
 
     repeat {
-      currentChallenge = challengeCategory!.next()
+      currentChallenge = challengeGenerator!.next()
     } while currentChallenge.answer == oldAnswer
   }
 }

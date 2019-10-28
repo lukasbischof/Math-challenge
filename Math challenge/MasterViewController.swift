@@ -31,24 +31,28 @@ class MasterViewController: UITableViewController {
   // MARK: - Table View
 
   override func numberOfSections(in tableView: UITableView) -> Int {
-    return 1
+    MathChallengeCategoriesRegistry.registeredCategories().count
   }
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return MathChallengesRegistry.registeredChallenges().count
+    challengeCategory(forIndexPath: IndexPath(row: 0, section: section)).generators().count
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-    let challengeCategory = MathChallengesRegistry.registeredChallenges()[indexPath.row]
+    let generator = challengeGenerator(forIndexPath: indexPath)
 
-    cell.textLabel?.text = challengeCategory.challengeDescription
+    cell.textLabel?.text = generator.challengeDescription
 
     return cell
   }
 
   override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-    return false
+    false
+  }
+  
+  override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    challengeCategory(forIndexPath: IndexPath(row: -1, section: section)).categoryName
   }
 
   // MARK: - Segues
@@ -65,16 +69,26 @@ class MasterViewController: UITableViewController {
     let destinationNavigationController = segue.destination as! UINavigationController
 
     if let detailViewController = destinationNavigationController.topViewController as? DetailViewController {
-      let challengeCategory = MathChallengesRegistry.registeredChallenges()[indexPath.row]
+      let generator = challengeGenerator(forIndexPath: indexPath)
 
-      prepareSegueDestinationViewController(detailViewController, forChallengeCategory: challengeCategory)
+      prepareSegueDestinationViewController(detailViewController, forChallengeGenerator: generator)
     }
   }
 
-  private func prepareSegueDestinationViewController(_ controller: DetailViewController, forChallengeCategory challengeCategory: MathChallengeGenerator) {
+  private func prepareSegueDestinationViewController(_ controller: DetailViewController, forChallengeGenerator challengeGenerator: MathChallengeGenerator) {
     controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
     controller.navigationItem.leftItemsSupplementBackButton = true
-    controller.challengeCategory = challengeCategory
-    controller.title = controller.challengeCategory!.challengeDescription
+    controller.challengeGenerator = challengeGenerator
+    controller.title = controller.challengeGenerator!.challengeDescription
+  }
+
+  // MARK: - Helpers
+
+  private func challengeGenerator(forIndexPath indexPath: IndexPath) -> MathChallengeGenerator {
+    challengeCategory(forIndexPath: indexPath).generators()[indexPath.row]
+  }
+
+  private func challengeCategory(forIndexPath indexPath: IndexPath) -> MathChallengeCategory {
+    MathChallengeCategoriesRegistry.registeredCategories()[indexPath.section]
   }
 }
