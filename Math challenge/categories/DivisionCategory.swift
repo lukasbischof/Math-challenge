@@ -9,6 +9,6 @@ let DivisionTileColor: UInt32 = 0xD84315
 
 class DivisionCategory: SingleMathChallengeCategory {
   let generator: MathChallengeGenerator = Division()
-  let tile = MathChallengeUITile(hexColor: DivisionTileColor)
+  let tile = MathChallengeUITile(hexColor: DivisionTileColor, imageName: "division")
   let categoryName: String = "Division"
 }

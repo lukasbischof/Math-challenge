@@ -9,6 +9,6 @@ let SPHAIRTileColor: UInt32 = 0xC62828
 
 class SPHAIRCategory: SingleMathChallengeCategory {
   let generator: MathChallengeGenerator = SPHAIR()
-  let tile = MathChallengeUITile(hexColor: SPHAIRTileColor)
+  let tile = MathChallengeUITile(hexColor: SPHAIRTileColor, imageName: "sphair")
   let categoryName: String = "SPHAIR"
 }

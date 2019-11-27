@@ -9,7 +9,7 @@ let AdditionTileColor: UInt32 = 0x1565C0
 
 class AdditionCategory: MathChallengeCategory {
   let categoryName: String = "Addition"
-  let tile = MathChallengeUITile(hexColor: AdditionTileColor)
+  let tile = MathChallengeUITile(hexColor: AdditionTileColor, imageName: "sphair")
 
   func generators() -> [MathChallengeGenerator] {
     (1..<5).map { (level: Int) -> MathChallengeGenerator in Addition(level: level) }

@@ -9,6 +9,6 @@ let SquaresTileColor: UInt32 = 0x9E9D24
 
 class SquaresCategory: SingleMathChallengeCategory {
   let generator: MathChallengeGenerator = Squares()
-  let tile = MathChallengeUITile(hexColor: SquaresTileColor)
+  let tile = MathChallengeUITile(hexColor: SquaresTileColor, imageName: "sphair")
   let categoryName: String = "2er Potenzen"
 }

@@ -22,7 +22,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="HtL-Sy-Osy">
+                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="HtL-Sy-Osy">
                         <rect key="frame" x="24" y="20" width="94" height="100"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,12 +54,13 @@
             </collectionViewCellContentView>
             <size key="customSize" width="363" height="138"/>
             <connections>
+                <outlet property="iconView" destination="HtL-Sy-Osy" id="goH-Du-BO5"/>
                 <outlet property="titleLabel" destination="yUx-fW-3CJ" id="k6m-F7-oTE"/>
             </connections>
             <point key="canvasLocation" x="-277.536231884058" y="81.026785714285708"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Image" width="194" height="179"/>
+        <image name="icon" width="1024" height="1024"/>
     </resources>
 </document>

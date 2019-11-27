@@ -8,9 +8,11 @@ import UIKit
 
 struct MathChallengeUITile {
   let color: UIColor
+  let icon: UIImage
 
-  init(hexColor: UInt32) {
+  init(hexColor: UInt32, imageName: String) {
     self.color = MathChallengeUITile.colorFromHex(hex: hexColor)
+    self.icon = UIImage(named: imageName)!
   }
 
   static func colorFromHex(hex: UInt32) -> UIColor {

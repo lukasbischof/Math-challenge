@@ -11,7 +11,8 @@ import UIKit
 class CategoryCollectionViewCell: UICollectionViewCell {
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var descriptionLabel: UILabel!
-
+  @IBOutlet weak var iconView: UIImageView!
+  
   class func nib() -> UINib {
     UINib(nibName: "CategoryCollectionViewCell", bundle: nil)
   }
@@ -30,5 +31,6 @@ class CategoryCollectionViewCell: UICollectionViewCell {
   func configureForCategory(_ category: MathChallengeCategory) {
     self.contentView.backgroundColor = category.tile.color
     self.titleLabel.text = category.categoryName
+    self.iconView.image = category.tile.icon
   }
 }
