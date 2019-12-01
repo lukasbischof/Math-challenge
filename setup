@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+gem list | grep -q cocoapods
+if [ $? -ne 0 ]; then
+  echo "Cocoapods is not installed"
+  echo "Run gem install cocoapods first"
+  exit 1
+fi
+
+pod install
