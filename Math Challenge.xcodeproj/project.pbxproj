@@ -29,7 +29,7 @@
 		8042DE0F236350EE008B1893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8042DE0D236350EE008B1893 /* LaunchScreen.storyboard */; };
 		8042DE1A236350EE008B1893 /* Math_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE19236350EE008B1893 /* Math_ChallengeTests.swift */; };
 		8042DE25236350EE008B1893 /* Math_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE24236350EE008B1893 /* Math_ChallengeUITests.swift */; };
-		8042DE3923635151008B1893 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3323635151008B1893 /* MasterViewController.swift */; };
+		8042DE3923635151008B1893 /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3323635151008B1893 /* CategoryDetailViewController.swift */; };
 		8042DE3A23635151008B1893 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3423635151008B1893 /* DetailViewController.swift */; };
 		8042DE3B23635151008B1893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3523635151008B1893 /* AppDelegate.swift */; };
 		8042DE3C23635151008B1893 /* MathChallengeCategoriesRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042DE3623635151008B1893 /* MathChallengeCategoriesRegistry.swift */; };
@@ -92,7 +92,7 @@
 		8042DE24236350EE008B1893 /* Math_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math_ChallengeUITests.swift; sourceTree = "<group>"; };
 		8042DE26236350EE008B1893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8042DE3223635150008B1893 /* Math Challenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Math Challenge-Bridging-Header.h"; sourceTree = "<group>"; };
-		8042DE3323635151008B1893 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		8042DE3323635151008B1893 /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
 		8042DE3423635151008B1893 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8042DE3523635151008B1893 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8042DE3623635151008B1893 /* MathChallengeCategoriesRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathChallengeCategoriesRegistry.swift; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 				8042DE3523635151008B1893 /* AppDelegate.swift */,
 				8042DE3823635151008B1893 /* Challenge.swift */,
 				8042DE3423635151008B1893 /* DetailViewController.swift */,
-				8042DE3323635151008B1893 /* MasterViewController.swift */,
+				8042DE3323635151008B1893 /* CategoryDetailViewController.swift */,
 				8042DE3623635151008B1893 /* MathChallengeCategoriesRegistry.swift */,
 				8034B2712363520F00A282CD /* Assets.xcassets */,
 				8042DE3723635151008B1893 /* SceneDelegate.swift */,
@@ -511,7 +511,7 @@
 				8042DE3C23635151008B1893 /* MathChallengeCategoriesRegistry.swift in Sources */,
 				8042DE4323635163008B1893 /* Addition.swift in Sources */,
 				8042DE3B23635151008B1893 /* AppDelegate.swift in Sources */,
-				8042DE3923635151008B1893 /* MasterViewController.swift in Sources */,
+				8042DE3923635151008B1893 /* CategoryDetailViewController.swift in Sources */,
 				8042DE4523635163008B1893 /* SPHAIR.swift in Sources */,
 				8042DE3A23635151008B1893 /* DetailViewController.swift in Sources */,
 				628B79D8C849585571436F8F /* Division.swift in Sources */,

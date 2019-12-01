@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+class CategoryDetailViewController: UITableViewController {
   var detailViewController: DetailViewController? = nil
 
   override func viewDidLoad() {
