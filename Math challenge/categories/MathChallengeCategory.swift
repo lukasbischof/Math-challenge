@@ -7,6 +7,7 @@ import Foundation
 
 protocol MathChallengeCategory {
   var categoryName: String { get }
+  var tile: MathChallengeUITile { get }
   func generators() -> [MathChallengeGenerator]
 }
 
