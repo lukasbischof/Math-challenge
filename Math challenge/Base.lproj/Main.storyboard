@@ -44,6 +44,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Kategorien" id="7aX-db-uUX"/>
+                    <connections>
+                        <segue destination="7bK-jq-Zjz" kind="showDetail" identifier="showCategory" id="Bzs-Rd-bDL"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lyz-6h-H3F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +113,7 @@
             <objects>
                 <navigationController id="vC3-pB-5Vb" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -126,11 +129,11 @@
             <objects>
                 <viewController title="Übung" id="8sp-jC-T3n" customClass="DetailViewController" customModule="Math_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BRy-FG-2RN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MATH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmt-6I-xn3" customClass="MTMathUILabel">
-                                <rect key="frame" x="0.0" y="128" width="414" height="55"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -141,7 +144,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EAt-Rx-FXS">
-                                <rect key="frame" x="8" y="199" width="398" height="50"/>
+                                <rect key="frame" x="8" y="167" width="398" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="uvP-03-Z8I"/>
                                 </constraints>
@@ -152,7 +155,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N89-HA-Y9J">
-                                <rect key="frame" x="16" y="267" width="382" height="30"/>
+                                <rect key="frame" x="16" y="235" width="382" height="30"/>
                                 <state key="normal" title="Antwort"/>
                                 <connections>
                                     <action selector="showAnswerButtonTapped:" destination="8sp-jC-T3n" eventType="touchUpInside" id="2if-d4-TFm"/>

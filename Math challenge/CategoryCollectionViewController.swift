@@ -11,7 +11,6 @@ import UIKit
 private let reuseIdentifier = "CategoryCell"
 
 class CategoryCollectionViewController: UICollectionViewController {
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -49,11 +48,7 @@ class CategoryCollectionViewController: UICollectionViewController {
     false
   }
 
-//  override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-//    false
-//  }
-//
-//  override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-//
-//  }
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    self.performSegue(withIdentifier: "showCategory", sender: self)
+  }
 }

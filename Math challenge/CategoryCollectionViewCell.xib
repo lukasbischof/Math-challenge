@@ -31,7 +31,7 @@
                         </constraints>
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="My cool description" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGK-Px-Ffb">
+                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="My cool description" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGK-Px-Ffb">
                         <rect key="frame" x="134" y="68.5" width="219" height="57.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
